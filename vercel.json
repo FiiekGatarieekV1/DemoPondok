@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/smp", "destination": "/smp.html" },
+    { "source": "/ma", "destination": "/ma.html" },
+    { "source": "/smk", "destination": "/smk.html" }
+  ]
+}
