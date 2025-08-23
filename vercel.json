@@ -3,8 +3,8 @@
     { "source": "/index.html", "destination": "/", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/smp", "destination": "/smp.html" },
-    { "source": "/ma", "destination": "/ma.html" },
-    { "source": "/smk", "destination": "/smk.html" }
+    { "source": "/smp.html", "destination": "/smp.html" },
+    { "source": "/ma.html", "destination": "/ma.html" },
+    { "source": "/smk.html", "destination": "/smk.html" }
   ]
 }
