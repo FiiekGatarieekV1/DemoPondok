@@ -1,4 +1,10 @@
 {
+  {
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true }
+  ]
+}
+
   "rewrites": [
     { "source": "/smp", "destination": "/smp.html" },
     { "source": "/ma", "destination": "/ma.html" },
