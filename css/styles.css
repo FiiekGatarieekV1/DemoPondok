@@ -3,6 +3,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7;
   color: #333;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,11 +43,53 @@ h1, h2, h3, h4, h5, h6 {
 /* ====== Buttons ====== */
 .btn {
   transition: all 0.3s ease-in-out;
+  border-radius: 30px;
 }
 
 .btn:hover {
   transform: translateY(-2px);
   opacity: 0.9;
+}
+
+/* ====== Galeri ====== */
+#gallery img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== Modal Gallery ====== */
+#galleryModal .modal-content {
+  background: rgba(0, 0, 0, 0.85); /* hitam transparan */
+}
+
+#galleryModal img {
+  max-height: 80vh;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+}
+
+/* Tombol navigasi carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* biar icon putih */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Caption (opsional jika ditambahkan) */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 8px;
 }
 
 /* ====== About Section ====== */
@@ -84,8 +127,32 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1rem;
 }
 
+/* ====== Contact Section ====== */
+#contact p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#contact a {
+  color: #198754;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+#contact iframe {
+  border-radius: 12px;
+}
+
 /* ====== Footer ====== */
 footer {
+  background: #198754;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
   font-size: 0.9rem;
   letter-spacing: 0.3px;
 }
