@@ -17,117 +17,156 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Pondok Pesantren Al Bisyri</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
-          <li class="nav-item"><a class="nav-link" href="#register">Pendaftaran</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow">
+  <div class="container">
 
-  <!-- Hero -->
-  <section class="hero text-center text-md-start">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-md-6">
-          <h1 class="display-5 fw-bold mb-3">
-            Selamat Datang di <br>Pondok Pesantren <br>Al Bisyri
-          </h1>
-          <p class="lead mb-4">
-            Kami hadir untuk memberikan layanan yang mempermudah proses administrasi 
-            dan akses informasi terkait Pondok Pesantren Al Bisyri.
-          </p>
-          <a href="#about" class="btn btn-warning btn-lg fw-semibold text-dark shadow">Kunjungi</a>
-        </div>
-        <div class="col-md-6">
-          <div id="heroCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
-            <div class="carousel-inner rounded">
-              <div class="carousel-item active">
-                <img src="images/foto1.png" class="d-block w-100 rounded" alt="Foto 1">
-              </div>
-              <div class="carousel-item">
-                <img src="images/foto2.png" class="d-block w-100 rounded" alt="Foto 2">
-              </div>
-              <div class="carousel-item">
-                <img src="images/foto3.png" class="d-block w-100 rounded" alt="Foto 3">
-              </div>
+    <!-- Logo & Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/logoarab.png" alt="Logo Arab" class="me-2" style="height:40px;">
+      <img src="images/logopondok.png" alt="Logo Pondok" class="me-2" style="height:40px;">
+    </a>
+
+    <!-- Toggle button (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#register">Pendaftaran</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero text-center text-md-start">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-md-6">
+        <h1 class="display-5 fw-bold mb-3">
+          Selamat Datang di <br>Pondok Pesantren <br>Al Bisyri
+        </h1>
+        <p class="lead mb-4">
+          Kami hadir untuk memberikan layanan informasi yang mempermudah proses administrasi 
+          santri di <b>Pondok Pesantren Al Bisyri Semarang</b> dan lembaga lainnya.
+        </p>
+        <a href="#about" class="btn btn-warning btn-lg fw-semibold text-dark shadow">Kunjungi</a>
+      </div>
+
+      <!-- Carousel -->
+      <div class="col-md-6">
+        <div id="heroCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+
+            <div class="carousel-item active">
+              <img src="images/masjid.jpg" class="d-block w-100 hero-img" alt="Foto 1">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-            <script>
-               const heroCarousel = document.querySelector('#heroCarousel');
-               const carousel = new bootstrap.Carousel(heroCarousel, {
-               interval: 3000, // 3 detik
-               wrap: true,
-               ride: 'carousel',
-               pause: 'hover' // berhenti kalau di-hover
-          });
-            </script>
+            <div class="carousel-item">
+              <img src="images/fotbar2.jpg" class="d-block w-100 hero-img" alt="Foto 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/fotbar1.jpg" class="d-block w-100 hero-img" alt="Foto 3">
+            </div>
+
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Tentang -->
-  <section id="about" class="py-5 text-center">
+  <section id="about" class="justify-content-center text-center py-5 bg-light">
     <div class="container">
       <h2 class="fw-bold mb-4">Tentang Kami</h2>
       <p class="fs-5 mx-auto" style="max-width: 800px;">
-        Pondok Pesantren Al Bisyri berdedikasi dalam mendidik santri dengan ilmu agama yang kuat, 
-        penguasaan kitab kuning, serta pembekalan akhlak mulia untuk bekal kehidupan bermasyarakat.
-      </p>
+        Pesantren tradisional adalah bagian penting pendidikan di Indonesia yang berjalan sejak ratusan tahun lalu. Dalam lingkungan yang memadukan pendidikan agama dan kedisiplinan, pesantren mampu menghasilkan generasi penerus bangsa dengan karakter kuat dan wawasan luas. Hingga kini, keberadaan pesantren tetap berevolusi untuk menjawab kebutuhan zaman modern. Dari yang berfokus pada hafalan Al-Qur’an hingga kemampuan menguasai teknologi,
+         pesantren sekarang menjadi lebih dari sekadar tempat belajar agama.
+      </p >
+      <p class="fs-5 mx-auto" style="max-width: 800px;">
+        Pondok Pesantren Al Bisyri berdedikasi dalam mendidik santri dengan ilmu agama yang kuat, penguasaan kitab kuning, serta pembekalan akhlak mulia untuk bekal kehidupan bermasyarakat</p>
     </div>
   </section>
 
-  <!-- Galeri Instagram -->
-  <section id="gallery" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="fw-bold text-center mb-4">Galeri Instagram</h2>
-      <div class="row justify-content-center g-4">
-        <div class="col-md-4">
-          <blockquote class="instagram-media" 
-            data-instgrm-permalink="https://www.instagram.com/smk_albisyri/" 
-            data-instgrm-version="14" 
-            style="background:#fff; border:0; margin: auto; max-width:540px; width:100%;">
+<!-- Galeri Instagram -->
+<section id="gallery" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Galeri Instagram</h2>
+    <div class="row justify-content-center g-3">
+
+      <!-- Galeri 1 -->
+      <div class="col-md-3">
+        <div class="ratio ratio-1x1">
+          <blockquote class="instagram-media w-200 h-400" 
+            data-instgrm-permalink="https://www.instagram.com/ponpesalbisyri_smg" 
+            data-instgrm-version="14"
+            style="border:0; margin:0; padding:0;">
           </blockquote>
         </div>
       </div>
+
+      <!-- Galeri 2 -->
+      <div class="col-md-3">
+        <div class="ratio ratio-1x1">
+          <blockquote class="instagram-media w-2000 h-400" 
+            data-instgrm-permalink="https://www.instagram.com/smpiab_smg/" 
+            data-instgrm-version="14"
+            style="border:0; margin:0; padding:0;">
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Galeri 3 -->
+      <div class="col-md-3">
+        <div class="ratio ratio-1x1">
+          <blockquote class="instagram-media w-200 h-400" 
+            data-instgrm-permalink="https://www.instagram.com/smk_albisyri/" 
+            data-instgrm-version="14"
+            style="border:0; margin:0; padding:0;">
+          </blockquote>
+        </div>
+      </div>
+
     </div>
-  </section>
-  <script async src="//www.instagram.com/embed.js"></script>
+  </div>
+</section>
+
+<!-- Instagram embed JS -->
+<script async src="//www.instagram.com/embed.js"></script>
+
 
   <!-- Informasi -->
   <section id="services" class="py-5 bg-light">
     <div class="container">
-      <h2 class="fw-bold text-center mb-5">Informasi Kami</h2>
+      <h2 class="fw-bold text-center mb-5">Lembaga Formal</h2>
 
       <!-- Pondok -->
       <div class="row align-items-center mb-5">
         <div class="col-md-6">
-          <h3 class="fw-bold text-success">Pondok Pesantren Al Bisyri</h3>
+          <h3 class="fw-bold text-success">TK Islam Bunga Teratai</h3>
           <p>
-            Pondok Pesantren Al Bisyri berkomitmen untuk mencetak generasi santri yang berakhlak mulia, 
+            TK Islam Bunga Teratai berkomitmen untuk mencetak generasi yang berakhlak mulia, 
             berilmu, dan siap mengabdi kepada masyarakat dengan landasan nilai-nilai Islam.
           </p>
           <a href="pondok.html" class="btn btn-success">Selengkapnya</a>
         </div>
         <div class="col-md-6">
-          <img src="images/foto3.png" class="img-fluid rounded shadow" alt="Pondok Pesantren">
+          <img src="images/teras.jpg" class="img-fluid rounded shadow" alt="Pondok Pesantren">
         </div>
       </div>
 
@@ -175,7 +214,7 @@
     <div class="container">
       <h2 class="fw-bold text-center mb-4">Pendaftaran Santri Baru</h2>
       <p class="text-center mb-5">Pondok Pesantren Al Bisyri</p>
-      <div class="row g-4">
+      <div class="row g-4 justify-content-center">
         
         <!-- Pondok Pesantren -->
         <div class="col-md-3">
@@ -252,7 +291,7 @@
     <div class="container text-center">
       <p class="mb-1">&copy; 2025 Pondok Pesantren Al Bisyri. All rights reserved.</p>
       <p class="mb-0">
-        <a href="https://www.instagram.com/smk_albisyri/" target="_blank" class="text-white me-3">
+        <a href="https://www.instagram.com/ponpesalbisyri_smg" target="_blank" class="text-white me-3">
           <i class="fab fa-instagram"></i>
         </a>
         <a href="mailto:info@albisyri.ac.id" class="text-white me-3">

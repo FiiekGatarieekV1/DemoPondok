@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ====== Hero Section ====== */
+.hero-img {
+  height: 400px;         /* atur sesuai kebutuhan: 350–500px */
+  object-fit: cover;     /* biar crop tengah, rapi */
+  object-position: center;
+}
+
 .hero {
   padding: 5rem 0;
   background: linear-gradient(135deg, #ffffff, #e6f9ef);
@@ -52,6 +58,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ====== Galeri ====== */
+#gallery blockquote.instagram-media {
+  width: 500px !important;
+  height: 50 !important;   /* samakan tinggi */
+  max-width: 100% !important;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 #gallery img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
